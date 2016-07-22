@@ -1,0 +1,53 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+
+/*
+--Si usamos una imagen en lugar de una textura, usamos las siguientes propiedades:
+
+	background-repeat: no-repeat;/*-- Asi indicamos que no se repite la imagen--*/
+/*  background-size: cover;/*-- Ponemos la imagen al 100% del ancho--*/
+
+	background:url(presence.png); /*-- Imagen de fondo--*/
+	background-attachment: fixed;/*-- Fijamos la imagen--*/
+	font-family: helvetica, arial, sans-serif;
+	line-height: 20px;
+}
+.contenedor{
+	/*-- Vamos a centrar el contenido--*/
+	width: 90%;
+	max-width: 900px;
+	margin: auto;
+}
+article{
+	/*-- Modificamos propiedades del contenedor--*/
+	/*-- color degradado del contenedor--*/
+	background: #258dc8; /* Old browsers */
+	background: -moz-linear-gradient(top,  #258dc8 0%, #62a3c4 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #258dc8 0%,#62a3c4 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #258dc8 0%,#62a3c4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#258dc8', endColorstr='#62a3c4',GradientType=0 ); /* IE6-9 */
+
+
+	padding: 20px;/*--Margen interno del contenedor--*/
+	margin: 20px 0px;/*-- Margen del contenedor--*/
+	color: #fff;/*--Color de las letras que estan dentro del contenedor en el tag article--*/
+	box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.25);/*--Sombra del contenedor--*/
+}
+article h2{
+	color: #fff;
+}
+article hr{
+		/*-- Color para la propiedad hr --*/
+		background: #1e5799; 
+		height: 5px;
+		border: none;
+}
+article p{
+	line-height: 25px;
+}
+article h2 article p article hr{
+	margin-bottom: 20px;
+}
